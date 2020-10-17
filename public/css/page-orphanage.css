@@ -1,0 +1,212 @@
+#page-orphanage {
+    min-height: 100vh;
+
+    display: flex;
+}
+
+aside.sidebar {
+    position: fixed;
+    height: 100%;
+    width: clamp(7rem, 8vw, 8.6rem);
+    background: #15c3d6;
+    padding: clamp(1rem, 1vw, 2rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside.sidebar footer button{
+    width: clamp(4rem, 6vw, 5rem);
+    height: clamp(4rem, 6vw, 5rem);
+    border: none;
+    border-radius: 10px;
+    background: #12afd4;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background .6s;
+}
+
+aside.sidebar footer button:hover{
+    background: #17D6eb;
+}
+
+.with-sidebar {
+    margin-left: clamp(7rem, 8vw, 8.6rem);
+}
+
+main {
+    flex: 1;
+}
+
+.orphanage-details {
+    width: clamp(60rem, 60vw, 72rem);
+    margin: 6.4rem auto;
+    background: white;
+    border: 2px solid #d3e2e5;
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+
+.orphanage-details > img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+    margin: 16px 40px 0;
+}
+
+.images button{
+    border: none;
+    border-radius: 2rem;
+    background: none;
+    height: 8.8rem;
+    width: fit-content;
+    cursor: pointer;
+
+    overflow: hidden;
+
+    opacity: .6;
+    transition: opacity .5s;
+}
+
+.images button:hover,
+.images button.active {
+    opacity: 1;
+}
+
+.images button img{
+    width: 100%;
+    height: 8.8rem;
+    object-fit: cover;
+
+}
+
+.orphanage-details-content {
+    padding: 8rem;
+}
+
+.orphanage-details-content h1{
+    color: #4D6F80;
+    font: 700 5.4rem/1 'Nunito', sans-serif;
+}
+
+.orphanage-details-content p{
+    color: #5C8599;
+    font: 600 1.8rem/1.2 'Nunito', sans-serif;
+
+    margin-top: 2rem;
+}
+
+/* map */
+
+.map-container {
+    margin-top: 6.4rem;
+    background: #e6f7fb;
+    border: 2px solid #b3dae2;
+    border-radius: 2rem;
+}
+
+#mapid {
+    width: 100%;
+    height: 28rem;
+}
+
+.map-container footer{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.map-container footer a {
+    color: #0089a5;
+    text-decoration: none;
+}
+
+.map-container .leaflet-container {
+    border-bottom: 2px solid #dde3f0;
+    border-radius: 2rem;
+}
+
+.orphanage-details-content hr {
+    width: 100%;
+    height: 1.5px;
+    border: none;
+
+    background: #b3e2e6;
+
+    margin: 6.4rem 0;
+}
+
+.orphanage-details-content h2 {
+    font: 700 3.6rem/1.5 'Nunito', sans-serif;
+    color: #4d6f80;
+}
+
+.open-details {
+    margin: 2.4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.open-details div {
+    padding: 3.2rem 2.4rem;
+}
+
+.open-details img {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.open-details .hour {
+    background: linear-gradient(149.97deg, #E6F7FB 8.13%, #FFFFFF 92.67%);
+    border: 1px solid #B3DAE2;
+    border-radius: 20px;
+    color: #5C8599;
+}
+
+.open-details .open-weekends {
+    background: linear-gradient(154.16deg, #EDFFF6 7.85%, #FFFFFF 91.03%);
+    border: 1px solid #A1E9C5;
+    border-radius: 20px;
+    color: #37C77F;
+}
+
+.primary-button {
+    margin-top: 6.4rem;
+
+    width: 100%;
+    height: 6.4rem;
+    border: none;
+    border-radius: 2rem;
+
+    cursor: pointer;
+    background: #3cdc8c;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background .5s;
+}
+
+.primary-button:hover{
+    background: #36cf82;
+}
+
+.primary-button img {
+    margin-right: 1.6rem;
+}
