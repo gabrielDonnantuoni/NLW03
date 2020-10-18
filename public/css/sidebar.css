@@ -1,0 +1,36 @@
+
+aside.sidebar {
+    position: fixed;
+    height: 100%;
+    width: clamp(7rem, 8vw, 8.6rem);
+    background: #15c3d6;
+    padding: clamp(1rem, 1vw, 2rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside.sidebar footer button{
+    width: clamp(4rem, 6vw, 5rem);
+    height: clamp(4rem, 6vw, 5rem);
+    border: none;
+    border-radius: 10px;
+    background: #12afd4;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background .6s;
+}
+
+aside.sidebar footer button:hover{
+    background: #17D6eb;
+}
+
+.with-sidebar {
+    margin-left: clamp(7rem, 8vw, 8.6rem);
+}
